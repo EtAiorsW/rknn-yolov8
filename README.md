@@ -8,7 +8,8 @@
 
 # 使用说明
 ### 演示
-  * 将仓库拉取至本地, 在项目根目录下存放一个测试视频(test.mp4), 运行main.py
+  * 板子上的python环境中配置好rknn-toolkit-lite2、opencv等依赖
+  * 将仓库拉取至板子上, 在项目根目录下存放一个测试视频(test.mp4), 运行python main.py
   * 运行rkcat.sh可以查看当前温度与NPU占用
 ### 部署应用
   * 修改main.py下的modelPath为你自己的模型所在路径
