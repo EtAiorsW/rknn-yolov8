@@ -2,17 +2,18 @@ import cv2
 import time
 from rknnpool import rknnPoolExecutor
 from yolov8 import yolov8
+from yolov8_seg import yolov8_seg
 
 cap = cv2.VideoCapture('./test.mp4')
 # cap = cv2.VideoCapture(0)
-modelPath = "./models/yolov8n.rknn"
+modelPath = "./models/yolov8n_seg.rknn"
 # 线程数, 增大可提高帧率
 TPEs = 3
 # 初始化rknn池
 pool = rknnPoolExecutor(
     model=modelPath,
     TPEs=TPEs,
-    func=yolov8)
+    func=yolov8_seg)
 
 # 初始化异步所需要的帧
 if (cap.isOpened()):
