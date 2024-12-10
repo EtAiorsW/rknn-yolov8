@@ -3,7 +3,7 @@
 * 在[rknn-multi-threaded](https://github.com/leafqycc/rknn-multi-threaded)该项目基础上添加yolov8支持，添加rknn-toolkit2 v2.3.0支持，rknn driver v0.9.6
 
 # 更新说明
-* 无
+* 2024-12-10 添加yolov8_seg支持
 
 
 # 使用说明
